@@ -20,7 +20,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="15dp"
-                android:text="TODO Login"
+                android:text="Todo Login"
                 android:textSize="30sp"
                 android:textColor="@color/header"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -29,8 +29,8 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="250dp"
-                android:layout_height="250dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:paddingTop="8dp"
                 android:src="@drawable/team2" />
@@ -98,22 +98,25 @@
                 app:layout_constraintTop_toTopOf="parent" />
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/not"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:background="@drawable/login_option"
-                android:text="About Me"
+                android:layout_centerInParent="true"
                 android:layout_marginLeft="25dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginTop="10dp"
-                android:paddingStart="40dp"
-                android:padding="15dp"
-                android:textSize="18sp"
+                android:layout_marginRight="8dp"
+                android:width="500dp"
+                android:height="50dp"
+                android:background="@drawable/login_option"
+                android:drawableStart="@drawable/ic_baseline_arrow_forward_ios_24"
                 android:gravity="center"
+                android:padding="10dp"
+                android:paddingStart="90dp"
+                android:paddingEnd="70dp"
+                android:text="About Me  👷‍♂️"
+                android:textAllCaps="false"
                 android:textColor="@color/header"
-                android:textStyle="bold"
-
-                />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/gg_login"
@@ -131,7 +134,7 @@
                 android:padding="10dp"
                 android:paddingStart="90dp"
                 android:paddingEnd="70dp"
-                android:text="Sign up for free"
+                android:text="Sign up for free ✨"
                 android:textAllCaps="false"
                 android:textColor="@color/header"
                 android:textSize="18sp"

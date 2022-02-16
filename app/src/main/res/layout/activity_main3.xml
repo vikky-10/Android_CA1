@@ -33,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:paddingTop="20dp"
+                android:paddingTop="5dp"
                 android:text="Guided By: Virrat Devaser Sir"
                 android:textSize="25sp"
                 android:textColor="#1e6f5c"
@@ -44,8 +44,8 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="350dp"
-                android:layout_height="350dp"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
                 android:layout_gravity="center"
                 android:src="@drawable/security" />
 
@@ -66,6 +66,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="150dp"
                 android:text="Submit"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/rounded_button"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ratingBar" />

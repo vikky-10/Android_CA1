@@ -10,12 +10,15 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Build
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.widget.Button
 import android.widget.RemoteViews
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +34,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
-    val btn: Button = findViewById(R.id.Sing)
+    supportActionBar!!.setBackgroundDrawable(ColorDrawable(Color.parseColor("#146775")))
+    if (TextUtils.isEmpty(EditText.getText())) {
+        EditText.setError(" Please Enter Email! ");
+    }
+
+val btn: Button = findViewById(R.id.Sing)
 
     btn.setOnClickListener {
         val intent = Intent(this, MainActivity2::class.java)
@@ -46,6 +54,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+//Todo:    Notification Logic
 
     val btns = findViewById<Button>(R.id.not);
     notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager

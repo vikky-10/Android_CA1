@@ -1,10 +1,9 @@
-package com.example.todolist
+package com.example.notification
 
 import android.app.Activity
 import android.view.Gravity
 import android.widget.TextView
 import android.widget.Toast
-import com.example.notification.R
 
 fun Toast.showCustomToast(message: String, activity: Activity)
 {

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/primary">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:text="TODO Login"
+                android:textSize="30sp"
+                android:textColor="@color/header"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:paddingTop="8dp"
+                android:src="@drawable/team2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:text="Get started with your work, school or personal Todo account"
+                android:textColor="@color/textView"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/EditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:hint="Enter email or phone"
+                android:textSize="20sp"
+                android:textColor="@color/editText"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="30dp"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:background="@color/grayInput"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Sing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:background="@drawable/rounded_button"
+                android:text="Sign In"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="25dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-20dp"
+                android:text="Get help with signing in"
+                android:textSize="18sp"
+                android:textColor="@color/header"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/not"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:background="@drawable/login_option"
+                android:text="About Me"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="40dp"
+                android:padding="15dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/header"
+                android:textStyle="bold"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/gg_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:width="500dp"
+                android:height="50dp"
+                android:background="@drawable/login_option"
+                android:drawableStart="@drawable/gg"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingStart="90dp"
+                android:paddingEnd="70dp"
+                android:text="Sign up for free"
+                android:textAllCaps="false"
+                android:textColor="@color/header"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
